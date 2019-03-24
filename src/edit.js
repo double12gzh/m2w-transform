@@ -48,6 +48,7 @@ var app = new Vue({
   },
   mounted: function (params) {
     this.nextTickChange()
+    this.generateHtml()
   },
   watch: {
     outPutHtml: function () {
