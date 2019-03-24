@@ -3,19 +3,13 @@
 转化 Markdown 到给微信特制的 HTML
 
 - 使用在线版： https://wdd.js.org/m2w-transform/
-- 介绍：https://mp.weixin.qq.com/s/pn0LzyfgUj6rGUfVHUksjg
+- 介绍：https://mp.weixin.qq.com/s/HOjYUt3vpkPyqQsy4ENSCQ
 
 ## 优点
 
-- 能较好地排版
-- 能解决 `ul` 和 `ol` 元素样式渲染时被微信编辑器重置的问题
-- 能把链接自动转换为参考文献索引，并且附在文字末尾
-
-## 关于我
-
-我是 Lyric。如果你喜欢我的工具，可以：
-
-- 关注我的公众号 `iamlyricw`
-- 关注我的博客 https://lyric.im
-- 给这个项目加星 https://github.com/lyricat/wechat-format
+- 仅支持将markdown文件转化成微信公众号内容，**不支持markdown编辑**。确切点说是编辑有点困难，哈哈哈。适合做个格式转换器
+- **支持90种代码高亮的主题**
+- 支持**显示目录**
+- 支持将markdown中的链接，转化成**底部外链**
+- 图片复制到微信编辑器中100%宽度
 
