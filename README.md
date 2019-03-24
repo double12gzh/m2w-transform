@@ -2,7 +2,7 @@
 
 转化 Markdown 到给微信特制的 HTML
 
-- 使用在线版： https://lab.lyric.im/wxformat
+- 使用在线版： https://wdd.js.org/m2w-transform/
 - 介绍：https://mp.weixin.qq.com/s/pn0LzyfgUj6rGUfVHUksjg
 
 ## 优点
@@ -18,8 +18,4 @@
 - 关注我的公众号 `iamlyricw`
 - 关注我的博客 https://lyric.im
 - 给这个项目加星 https://github.com/lyricat/wechat-format
-
-
-
-kkk
 

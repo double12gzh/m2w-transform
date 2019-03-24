@@ -80,10 +80,13 @@
 
   function link (href, title, text) {
     log$3(href, title, text);
-    let index = state.links.push({
-      href, text
-    });
-    return `<span ${style$1('a')}>${text}<sup>[${index}]</sup></span>`
+    if (href !== text) {
+      let index = state.links.push({
+        href, text
+      });
+      return `<span ${style$1('a')}>${text}<sup>[${index}]</sup></span>`
+    }
+    return `<span ${style$1('a')}>${text}</span>`
   }
 
   const log$4 = getLog('heading');
