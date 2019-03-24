@@ -36,12 +36,14 @@ var app = new Vue({
       theme: defaultTheme,
       fonts: this.currentFont.fonts
     })
-    axios({
-      method: 'get',
-      url: './assets/default-content.md',
-    }).then(function (resp) {
-      self.editor.setValue(resp.data)
-    })
+    var defaultValue = '![](https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/login/loginpage/images/bg_banner4273fb.png)'
+    this.editor.setValue(defaultValue)
+    // axios({
+    //   method: 'get',
+    //   url: './assets/default-content.md',
+    // }).then(function (resp) {
+    //   self.editor.setValue(resp.data)
+    // })
   },
   methods: {
     renderWeChat: function (source) {

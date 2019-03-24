@@ -1,0 +1,14 @@
+{
+  "name": "wechat-format",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wangduanduan/wechat-format.git",
+  "author": "wangduanduan <1779706607@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.7.0"
+  },
+  "scripts": {
+    "build": "rollup -c -w"
+  }
+}

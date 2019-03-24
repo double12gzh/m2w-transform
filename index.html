@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown-微信格式转换器</title>
+  <link href="./lib/bootstrap/bootstrap.css" rel="stylesheet">
+  <style>
+    body{
+      background: #fff
+    }
+    pre{
+      padding: 0px
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Markdown-微信 格式转换器</h1>
+  <div class="container-fluid" id="editor">
+    <div class="row">
+      <link :href="codeStyleHref" rel="stylesheet">
+      <div class="col-md-6">
+        <p>
+          <button @click="copyHtml" class="btn btn-success">复制HTML</button>
+        </p>
+        <p style="width:300px">
+          代码样式:
+          <select class="form-control" v-model="selectedCodeStyle">
+            <option v-for="item in codeStyles" :value="item">{{item}}</option>
+          </select>
+        </p>
+        <p>
+            <label ><input @change="generateHtml" type="checkbox" v-model="enableToc"> 启用顶部文章目录</label> 
+            <label ><input @change="generateHtml" type="checkbox" v-model="enableExternal"> 启用底部外部链接</label> 
+        </p>
+        <p>
+          粘贴Markdown <br>
+          <textarea @change="generateHtml" name="" id="" cols="30" rows="10" v-model="rawSource">\</textarea>
+        </p>
+      </div>
+      <div class="col-md-6" id="outPutHtml">
+        <div v-html="outPutHtml"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./lib/hightlight/highlight.pack.js"></script>
+  <script src="./lib/debug.js"></script>
+  <script src="./lib/marked.min.js"></script>
+  <script src="./lib/vue.js"></script>
+  <script src="./dist/edit.js"></script>
+</body>
+
+</html>

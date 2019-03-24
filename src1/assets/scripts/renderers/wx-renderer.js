@@ -2,6 +2,7 @@ var WxRenderer = function (opts) {
   this.opts = opts
   var ENV_USE_REFERENCES = true
   var ENV_STETCH_IMAGE = true
+  var logger = debug(`${appName}: wxRender`)
 
   var footnotes = []
   var footnoteindex = 0
@@ -62,7 +63,7 @@ var WxRenderer = function (opts) {
       }
       return '<code style="font-size: 90%; opacity: 0.6;">[' + x[0] + ']</code> ' + x[1] + ': <i>'  + x[2] +'</i><br/>'
     })
-    return '<h3 ' + S('h3') + '>References</h3><p ' + S('footnotes') + '>'  + footnoteArray.join('\n') + '</p>'
+    return '<h3 ' + S('h3') + '>参考资料</h3><p ' + S('footnotes') + '>'  + footnoteArray.join('\n') + '</p>'
   }
 
   this.setOptions = function (newOpts) {
@@ -126,6 +127,7 @@ var WxRenderer = function (opts) {
       return '<p ' + S('ol') + '>' + text + '</p>'
     }
     renderer.image = function (href, title, text) {
+      logger(href, title, text)
       return '<img ' + S(ENV_STETCH_IMAGE ? 'image' : 'image_org') + ' src="' + href + '" title="'+title+'" alt="'+text+'"/>'
     }
     renderer.link = function (href, title, text) {
