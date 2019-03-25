@@ -22,6 +22,9 @@
     },
     strong: {
       color: 'red'
+    },
+    listitem: {
+      'font-size': '16px'
     }
   };
 
@@ -113,6 +116,33 @@
     return `<strong ${style$1('strong')}> ${text} </strong>`
   }
 
+  const log$7 = getLog('listitem');
+
+  function listitem (text, task, checked) {
+    log$7(text, task, checked);
+    // return `<li ${style('listitem')}> ${text} </li>`
+    return `${text}$$`
+  }
+
+  const log$8 = getLog('list');
+
+  function list (body, ordered, start) {
+    log$8(body, ordered, start);
+    let li = body.split('$$').filter((item) => {
+      return !!item
+    });
+    if (ordered) {
+      li = li.map((item, index) => {
+        return `<span style="font-size: 16px">${index + 1}. ${item}</span><br>`
+      });
+    } else {
+      li = li.map((item, index) => {
+        return `<span style="font-size: 16px">• ${item}</span><br>`
+      });
+    }
+    return li.join('')
+  }
+
   function getRenderer () {
     state.links = [];
     state.toc = [];
@@ -125,6 +155,8 @@
     renderer.heading = heading;
     renderer.blockquote = blockquote;
     renderer.strong = strong;
+    renderer.listitem = listitem;
+    renderer.list = list;
 
     return renderer
   }

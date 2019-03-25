@@ -14,5 +14,8 @@ export default {
   },
   strong: {
     color: 'red'
+  },
+  listitem: {
+    'font-size': '16px'
   }
 }

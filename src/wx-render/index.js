@@ -8,10 +8,10 @@ import link from './style.link'
 import heading from './style.heading'
 import blockquote from './style.blockquote'
 import strong from './style.strong'
-
+import listitem from './style.listitem'
+import list from './style.list'
 
 import state from './state'
-
 
 function getRenderer () {
   state.links = []
@@ -25,6 +25,8 @@ function getRenderer () {
   renderer.heading = heading
   renderer.blockquote = blockquote
   renderer.strong = strong
+  renderer.listitem = listitem
+  renderer.list = list
 
   return renderer
 }
