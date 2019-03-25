@@ -1,0 +1,9 @@
+body{
+  background: #fff
+}
+pre{
+  padding: 0px
+}
+p, code, ul li, pre code, ol li{
+  font-size: 16px;
+}

@@ -1,6 +1,6 @@
 # 微信公众号排版编辑器
 
-转化 Markdown 到给微信特制的 HTML
+将markdown吐出的html, 喂给微信编辑器
 
 - 使用在线版： https://wdd.js.org/m2w-transform/
 - 介绍：https://mp.weixin.qq.com/s/HOjYUt3vpkPyqQsy4ENSCQ
