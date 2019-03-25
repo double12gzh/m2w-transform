@@ -7,7 +7,7 @@
 
 ## 优点
 
-- 渲染速度加快
+- 加载速度快
 - 完美还原ul和li
 - 字号调整为16px
 - 仅支持将markdown文件转化成微信公众号内容，**不支持markdown编辑**。确切点说是编辑有点困难，哈哈哈。适合做个格式转换器
@@ -15,4 +15,9 @@
 - 支持**显示目录**
 - 支持将markdown中的链接，转化成**底部外链**
 - 表格和图片复制到微信编辑器中100%宽度
+
+## 渲染截图
+
+![](https://segmentfault.com/img/bVbqqeQ?w=831&h=582)
+![](https://segmentfault.com/img/bVbqqfI?w=830&h=474)
 
