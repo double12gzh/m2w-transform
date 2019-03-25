@@ -1,5 +1,7 @@
 # 微信公众号排版编辑器
 
+![](https://segmentfault.com/img/remote/1460000018635459?w=463&h=454)
+
 将markdown吐出的html, 喂给微信编辑器
 
 - 使用在线版： https://wdd.js.org/m2w-transform/
