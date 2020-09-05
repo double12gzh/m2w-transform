@@ -1,7 +1,7 @@
-# 1. 如何访问
+# 1. 如何使用
 [点我](http://htmlpreview.github.io/?https://github.com/double12gzh/m2w-transform/blob/master/index.html)
 
-# 2. 变更
+# 2. 我的变更
 - 修改标题颜色
 - 修改listitem颜色
 - 修改目录格式
