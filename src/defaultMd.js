@@ -1,9 +1,14 @@
 export default `
 ![](https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/login/loginpage/images/bg_banner4273fb.png)
-\`\`\`js
+\`\`\`go
+package main
+
+import "fmt"
+
 var a = 1
-function sayHello () {
-  return 'hello'
+
+func main() {
+  fmt.Println("HelloWorld")
 }
 \`\`\`
 `
