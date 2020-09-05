@@ -54,7 +54,7 @@ function getToc (enable = false) {
   }
   let re = `<h4 ${style('heading')}>文章目录</h4>`
   state.toc.forEach((item, index) => {
-    re += `<p style="text-indent: ${item.level}em;margin:0px">- ${item.text}</p>`
+    re += `<p style="text-indent: ${item.level}em;margin:0px"> ${item.text}</p>`
   })
   return re + '<hr >'
 }

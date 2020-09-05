@@ -14,17 +14,18 @@
       color: '#576b95'
     },
     heading: {
-      'text-align': 'center'
+      'text-align': 'left',
+      color: 'green'
     },
     blockquote: {
       background: '#eee',
       'border-left': '3px solid #5cb85c'
     },
     strong: {
-      color: 'red'
+      color: 'blue'
     },
     listitem: {
-      'font-size': '16px'
+      'font-size': '10px'
     }
   };
 
@@ -120,7 +121,7 @@
 
   function listitem (text, task, checked) {
     log$7(text, task, checked);
-    // return `<li ${style('listitem')}> ${text} </li>`
+    //return `<li ${style('listitem')}> ${text} </li>`
     return `${text}$$`
   }
 
@@ -133,11 +134,11 @@
     });
     if (ordered) {
       li = li.map((item, index) => {
-        return `<span style="font-size: 16px">${index + 1}. ${item}</span><br>`
+        return `<span style="font-size: 16px;color:#DAA520">${index + 1}. ${item}</span><br>`
       });
     } else {
       li = li.map((item, index) => {
-        return `<span style="font-size: 16px">• ${item}</span><br>`
+        return `<span style="font-size: 16px;color:#DAA520">• ${item}</span><br>`
       });
     }
     return li.join('')
@@ -184,7 +185,7 @@
     }
     let re = `<h4 ${style$1('heading')}>文章目录</h4>`;
     state.toc.forEach((item, index) => {
-      re += `<p style="text-indent: ${item.level}em;margin:0px">- ${item.text}</p>`;
+      re += `<p style="text-indent: ${item.level}em;margin:0px"> ${item.text}</p>`;
     });
     return re + '<hr >'
   }

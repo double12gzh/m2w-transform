@@ -6,16 +6,17 @@ export default {
     color: '#576b95'
   },
   heading: {
-    'text-align': 'center'
+    'text-align': 'left',
+    color: 'green'
   },
   blockquote: {
     background: '#eee',
     'border-left': '3px solid #5cb85c'
   },
   strong: {
-    color: 'red'
+    color: 'blue'
   },
   listitem: {
-    'font-size': '16px'
+    'font-size': '10px'
   }
 }
